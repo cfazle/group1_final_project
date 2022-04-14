@@ -23,10 +23,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function home()
+    /**public function home()
     {
         $drinks = DB::table('products')->where('category', 'drinks')->limit(2)->get();
         $snacks = DB::table('products')->where('category', 'snacks')->limit(2)->get();
         return view('index', ['drinks'=>$drinks, 'snacks'=>$snacks]);
-    }
+    } **/
 }

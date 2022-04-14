@@ -77,4 +77,4 @@ Route::get('/about', function (){
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+#Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
