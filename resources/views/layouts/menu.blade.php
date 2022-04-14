@@ -10,40 +10,35 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-
-
-
-
-
-                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                   <!-- Left Side Of Navbar -->
-                                  <ul class="navbar-nav me-auto">
-                                  <div class="navbar-nav ml-auto p-4">
-                                                      <a href="{{route('home')}}" class="nav-item nav-link active">Home</a>
-                                                      <a href="{{route('about')}}" class="nav-item nav-link">About</a>
+                    <ul class="navbar-nav me-auto">
+                        <div class="navbar-nav ml-auto p-4">
+                             <a href="{{route('home')}}" class="nav-item nav-link active">Home</a>
+                             <a href="{{route('about')}}" class="nav-item nav-link">About</a>
 
-                                                      <a href="{{route('products')}}" class="nav-item nav-link">Menu</a>
-                                                      <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
+                             <a href="{{route('products')}}" class="nav-item nav-link">Menu</a>
+                             <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
 
 
-                                  </ul>
-                                   </div>
+                      </ul>
+                        </div>
                                   <!-- Right Side Of Navbar -->
-                                  <div class="top-nav-right">
+                         <div class="top-nav-right">
 
-                                  <ul class="navbar-nav ms-auto">
+                            <ul class="navbar-nav ms-auto">
                                       <!-- Authentication Links -->
                                       @guest
                                           @if (Route::has('login'))
-                                              <li class="nav-item">
-                                                  <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                              </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                   </li>
                                           @endif
 
                                           @if (Route::has('register'))
-                                              <li class="nav-item">
-                                                  <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                              </li>
+                                    <li class="nav-item">
+                                         <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                     </li>
                                           @endif
                                       @else
                                           <li class="nav-item dropdown">

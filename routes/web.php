@@ -20,7 +20,7 @@ use App\Http\Controllers\PostsController;
     // your routes
 
 Route::get('/', [ProjectController::class, 'index'])->name('home');
-//Route::get('/search/', 'PostsController@search')->name('search');
+
 Route::get('/search', [ProjectController::class, 'search'])->name('search');
 
 
